@@ -14,7 +14,7 @@ RUN npm ci && npm run build && env NODE_ENV=production npm prune
 # --------------------------------------------------------------------------------
 
 FROM node:12-alpine
-LABEL description="Smee.io"
+LABEL description="Blxck-smee.io"
 
 # Let's make our home
 WORKDIR /usr/src/smee.io
@@ -39,5 +39,5 @@ COPY --chown=node:node lib ./lib
 COPY --chown=node:node index.js ./index.js
 COPY --chown=node:node package*.json ./
 
-EXPOSE 3000
+EXPOSE 8426
 CMD ["npm", "start"]

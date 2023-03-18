@@ -1,0 +1,6 @@
+services:
+  blxck-smee:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: blxck-smee/latest
