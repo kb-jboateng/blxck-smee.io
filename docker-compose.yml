@@ -3,4 +3,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    ports:
+      - '8624:8624'
     image: blxck-smee/latest

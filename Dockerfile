@@ -39,5 +39,5 @@ COPY --chown=node:node lib ./lib
 COPY --chown=node:node index.js ./index.js
 COPY --chown=node:node package*.json ./
 
-EXPOSE 8624
+# EXPOSE 8624
 CMD ["npm", "start"]
